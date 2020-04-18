@@ -1,0 +1,888 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DSAPI
+</name>
+</assembly>
+<members>
+<member name="T:DSAPI.My.Resources.Resources">
+<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.ResourceManager">
+<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.Culture">
+<summary>
+  重写当前线程的 CurrentUICulture 属性
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.dsencode">
+<summary>
+  查找 System.Byte[] 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.DSWEBAPIERRORCODE">
+<summary>
+  查找类似 0001:参数数量不匹配
+0002:参数类型转换失败
+0003:指定的API未开放
+0004:发生了内部错误
+0005:已限制该客户端类型对API的调用
+0006:您的IP或IP段已在黑名单中
+0007:已达到最大调用次数
+0008:需要授权才可调用
+0009:API库正在维护中，暂停访问
+0010:此API要求传递参数才可调用
+0011:当有传递某个参数名称时，所有参数均须带名称传递
+0012:仅当数据类型为Byte数组或String类型时才可返回Base64文本
+0013:仅当数据类型为Byte数组或String类型时才可返回文件下载类型
+0014:仅当数据类型为Byte数组时才可返回图像类型
+0015:身份或授权验证失败
+0016:不能在一个DSWebAPI类中同时存在多个默认执行方法
+0017:默认执行方法不应带有任何参数
+0018:默认执行方法不应返回任何值
+0019:循环执行的方法不应带有任何参数
+0020:循环执行的方法不应返回任何值
+0021:循环执行的参数不能叠加，优先级：毫秒间隔&gt;周期
+0022:指定的方法未加入到循环执行列表
+0033:调用频率 [字符串的其余部分被截断]&quot;; 的本地化字符串。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.dswebapiicon">
+<summary>
+  查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.DSWEBAPI编译文件头">
+<summary>
+  查找类似 Friend Class XXXX引导文件
+    Private Shared _Url As String = &quot;http://127.0.0.1&quot;
+    Private Shared _Enc As System.Text.Encoding = Text.Encoding.UTF8
+    Public Shared Property 编码 As System.Text.Encoding
+        Get
+            Return _Enc
+        End Get
+        Set(value As System.Text.Encoding)
+            _Enc = value
+        End Set
+    End Property
+    Public Shared Property 服务器Url As String
+        Get
+            Return _Url
+        End Get
+        Set(value As String)
+            If val [字符串的其余部分被截断]&quot;; 的本地化字符串。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.Shadow">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.webdata">
+<summary>
+  查找 System.Byte[] 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.字符转拼音">
+<summary>
+  查找 System.Byte[] 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.小盾牌">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSAPI.My.Resources.Resources.身份证地址代码对照">
+<summary>
+  查找类似 110000 北京市
+110100 北京市市辖区
+110101 北京市东城区
+110102 北京市西城区
+110103 北京市崇文区
+110104 北京市宣武区
+110105 北京市朝阳区
+110106 北京市丰台区
+110107 北京市石景山区
+110108 北京市海淀区
+110109 北京市门头沟区
+110111 北京市房山区
+110112 北京市通州区
+110113 北京市顺义区
+110200 北京市县
+110221 北京市昌平县
+110224 北京市大兴县
+110226 北京市平谷县
+110227 北京市怀柔县
+110228 北京市密云县
+110229 北京市延庆县
+120000 天津市
+120100 天津市市辖区
+120101 天津市和平区
+120102 天津市河东区
+120103 天津市河西区
+120104 天津市南开区
+120105 天津市河北区
+120106 天津市红桥区
+120107 天津市塘沽区
+120108 天津市汉沽区
+120109 天津市大港区
+120110 天津市东丽区
+120111 天津市西青区
+120112 天 [字符串的其余部分被截断]&quot;; 的本地化字符串。
+</summary>
+</member>
+<member name="P:DSAPI.DSWebAPI.当前客户端">
+ <summary>
+ 获取正在请求该方法的WebAPI客户端，该属性不适用于默认执行的方法。
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:DSAPI.DSWebAPI.身份验证">
+ <summary>
+ 以继承于DSWebAPI身份验证接口的类Type作为验证方式
+ </summary>
+</member>
+<member name="M:DSAPI.DSWebAPI.身份验证.#ctor(System.Type)">
+ <summary>
+ 以继承于DSWebAPI身份验证接口的类Type作为验证方式
+ </summary>
+ <param name="验证方式"></param>
+</member>
+<member name="T:DSAPI.DSWebAPI.默认执行">
+ <summary>
+ <para>当本类在DSWebAPI缓存中实例化后默认执行的方法，在同一个类中只允许有一个默认执行的方法且不带任何参数。<br/>
+注意:该方法将不会公开也不允许客户端访问。
+</para>
+ </summary>
+</member>
+<member name="M:DSAPI.DSWebAPI.清理调用IP缓存列表">
+ <summary>
+ 将所有API方法的IP统计缓存列表清空，但不清除调用次数
+ </summary>
+</member>
+<member name="M:DSAPI.DSWebAPI.清理调用次数">
+ <summary>
+ 将所有API方法的调用次数清零，但不清除调用IP缓存列表
+ </summary>
+</member>
+<member name="F:DSAPI.图形图像.鼠标指针.CURSORINFO.flags">
+ <summary>
+ 0=隐藏,1=显示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.从可执行文件获取小图标(System.String)">
+ <summary>
+ 获取小图标
+ </summary>
+ <param name="EXE或DLL路径"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.从可执行文件获取大图标(System.String)">
+ <summary>
+ 获取大图标
+ </summary>
+ <param name="EXE或DLL路径"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.获取文件夹图标(System.String,System.Boolean)">
+ <summary>
+ 获取文件夹图标
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.获取扩展名关联图标(System.String,System.Boolean)">
+ <summary>
+ 获取注册表关联图标
+ </summary>
+ <param name="扩展名">扩展名</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.获取图片文件缩略图(System.String,System.Drawing.Size)">
+ <summary>
+ 获取图片缩略图
+ </summary>
+ <param name="图片文件路径"></param>
+ <param name="需要的缩略图尺寸"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.获取绘制文字所需大小(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32,System.Int32)">
+ <summary>
+ 测量获取绘制文字所需大小,大小将增加预增加的宽度和高度
+ </summary>
+ <param name="要绘制的文本">要绘制的文本</param>
+ <param name="字体">字体</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.透明度(System.Drawing.Bitmap@,System.Double)">
+ <summary>
+ 调整图像透明度
+ </summary>
+ <param name="要应用透明特效的图像">要调整透明度的图像</param>
+ <param name="透明度">亮度值,范围0%-100%</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.投影(System.Drawing.Bitmap@,System.Int32,System.Int32)">
+ <summary>
+ 图像投影效果
+ </summary>
+ <param name="要应用投影特效的图像">要应用模糊特效的图像</param>
+ <param name="影子大小"></param>
+ <param name="影子浓度">影子浓度,最佳取值1-50</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.外发光(System.Drawing.Bitmap@,System.Drawing.Color,System.Int32,System.Int32,System.Boolean)">
+ <summary>
+ 图像外发光效果
+ </summary>
+ <param name="要应用外发光的图像"></param>
+ <param name="光晕颜色"></param>
+ <param name="光晕大小"></param>
+ <param name="光晕浓度"></param>
+ <param name="挖空处理"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.投影(System.Drawing.Bitmap@,System.Int32,System.Int32,System.Drawing.Point)">
+ <summary>
+ 图像投影效果
+ </summary>
+ <param name="要应用投影特效的图像">要应用模糊特效的图像</param>
+<param name="影子大小"></param>
+ <param name="影子浓度">影子浓度,最佳取值1-50</param>
+ <param name="偏移量">投影自左上角位置开始偏移的像素距离</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.挖空投影(System.Drawing.Bitmap@,System.Int32,System.Int32)">
+ <summary>
+ 图像投影效果
+ </summary>
+ <param name="要应用挖空投影特效的图像">要应用挖空投影特效的图像</param>
+ <param name="影子大小"></param>
+ <param name="影子浓度">影子浓度,最佳取值1-50</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.挖空投影(System.Drawing.Bitmap@,System.Int32,System.Int32,System.Drawing.Point)">
+ <summary>
+ 图像投影效果
+ </summary>
+ <param name="要应用挖空投影特效的图像">要应用挖空投影特效的图像</param>
+ <param name="影子大小"></param>
+ <param name="影子浓度">影子浓度,最佳取值1-50</param>
+ <param name="偏移量">投影自左上角位置开始偏移的像素距离</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.模糊(System.Drawing.Bitmap@,System.Int32)">
+ <summary>
+ 图像模糊效果
+ </summary>
+ <param name="要应用模糊特效的图像">要应用模糊效果的图像</param>
+ <param name="模糊半径">模糊半径,取值范围5-100</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.应用透明度遮罩(System.Drawing.Bitmap@,System.Drawing.Bitmap)">
+ <summary>
+ 将指定图像使用指定遮罩图的透明度
+ </summary>
+ <param name="要应用透明度遮罩的图像"></param>
+ <param name="透明遮罩"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.灰度(System.Drawing.Bitmap@)">
+ <summary>
+ 图像灰度效果
+ </summary>
+ <param name="要应用灰度特效的图像">要应用灰度特效的图像</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.黑与白(System.Drawing.Bitmap@,System.Int32)">
+ <summary>
+ 图像黑白效果
+ </summary>
+ <param name="要应用黑白特效的图像">要应用黑白特效的图像</param>
+ <param name="分量值">加亮或变暗的分量,值为-100到100</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.对比度(System.Drawing.Bitmap@,System.Int32,System.Single)">
+ <summary>
+ 更改图像对比度
+ </summary>
+ <param name="要应用更改对比度的图像">要应用黑白特效的图像</param>
+ <param name="分量值">加亮或变暗的分量,值为-127到127</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.亮度(System.Drawing.Bitmap@,System.Int32)">
+ <summary>
+ 调整图像亮度
+ </summary>
+ <param name="要调整亮度的图像">要调整亮度的图像</param>
+ <param name="亮度值_负128到128">亮度值,范围-128,128</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.反色(System.Drawing.Bitmap@)">
+ <summary>
+ 调整图像透明度
+ </summary>
+ <param name="要应用反色特效的图像">要应用反色特效的图像</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.保留通道(System.Drawing.Bitmap@,DSAPI.图形图像.色彩通道)">
+ <summary>
+ 保留图像指定色彩
+ </summary>
+ <param name="要应用保留色彩通道特效的图像">只保留指定色彩通道特效的图像</param>
+ <param name="要保留的色彩通道">指定哪种颜色通道应当保留,其余部分灰度处理</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.动画.淡出淡入(System.Windows.Forms.Control@,System.Drawing.Bitmap,System.Double)">
+ <summary>
+ 对指定控件背景实现新图像的淡出淡入效果
+ </summary>
+ <param name="要使用背景淡出淡入的控件"></param>
+ <param name="要淡入显示的新图像"></param>
+ <param name="动画速度_0到1">取值范围0-1,默认0.01</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.动画.淡出淡入(System.Windows.Forms.Control@,System.Drawing.Bitmap)">
+ <summary>
+ 对指定控件背景实现新图像的淡出淡入效果
+ </summary>
+ <param name="要使用背景淡出淡入的控件"></param>
+ <param name="要淡入显示的新图像"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.动画.淡入(System.Windows.Forms.Control@,System.Drawing.Bitmap)">
+ <summary>
+ 对指定控件背景实现新图像的淡入效果
+ </summary>
+ <param name="要使用背景淡入的控件"></param>
+ <param name="要淡入显示的新图像"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.动画.淡入(System.Windows.Forms.Control@,System.Drawing.Bitmap,System.Double)">
+ <summary>
+ 对指定控件背景实现新图像的淡入效果
+ </summary>
+ <param name="要使用背景淡入的控件"></param>
+ <param name="要淡入显示的新图像"></param>
+ <param name="动画速度_0到1">取值范围0-1,默认0.005</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.动画.淡出(System.Windows.Forms.Control@,System.Double)">
+ <summary>
+ 对指定控件背景实现新图像的淡出效果
+ </summary>
+ <param name="要使用背景淡出的控件"></param>
+ <param name="动画速度_0到1">取值范围0-1,默认0.01</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.图形图像.动画.淡出(System.Windows.Forms.Control@)">
+ <summary>
+ 对指定控件背景实现新图像的淡出效果
+ </summary>
+ <param name="要使用背景淡出的控件"></param>
+ <remarks></remarks>
+</member>
+<member name="T:DSAPI.图形图像.彩色文字图像.数值调整">
+ <summary>
+ 格式：ChValue=显示文本,目标控件名称,绑定的属性名称,最小值,最大值,当前值
+ </summary>
+</member>
+<member name="P:DSAPI.图形图像.彩色文字图像.输出图像">
+ <summary>
+ 最终输出图像
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.图形图像.彩色文字图像.字体">
+ <summary>
+ 字体
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.图形图像.彩色文字图像.描边颜色">
+ <summary>
+ 文字描边颜色
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.摄像头.摄像头_avicap32.在指定控件上启动视频预览(System.IntPtr,System.Drawing.Rectangle,System.Int32)">
+ <summary>
+ 开始显示图像
+ </summary>
+</member>
+<member name="M:DSAPI.摄像头.摄像头_avicap32.停止预览">
+ <summary>
+ 停止显示
+ </summary>
+</member>
+<member name="M:DSAPI.摄像头.摄像头_avicap32.停止录像">
+ <summary>
+ 停止录像
+ </summary>
+</member>
+<member name="M:DSAPI.QQ用户相关.获取昵称(System.String)">
+ <summary>
+ 获取指定<paramref name="QQ号"/>的昵称
+ <para>昵称将以<see cref="T:System.String"/>类型返回</para>
+ <para>示例：</para>
+  <para>Dim NickName As String=获取昵称("20353841")</para>
+  <para>MsgBox(NickName)</para>
+ <para>另请参阅：<seealso cref="T:DSAPI.QQ用户相关.QQ昵称和号码"/></para>    
+ </summary>
+ <param name="QQ号">必须至少5位长度的<see cref="T:System.String"/>类型,可转换为<see cref="T:DSAPI.QQ用户相关.QQ昵称和号码"/>类型
+ </param>
+ <returns></returns>
+</member>
+<member name="M:DSAPI.反射.序列化.序列化(System.String,System.Object)">
+ <summary>
+ 序列化到文件
+ </summary>
+ <param name="FilePath">文件路径</param>
+ <param name="Obj">要序列化的对象</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.反射.序列化.反序列化(System.String)">
+ <summary>
+ 从文件反序列化
+ </summary>
+ <param name="FilePath">文件路径</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.添加路径节点到TreeView(System.Windows.Forms.TreeView,System.String)">
+ <summary>
+ 将路径添加到目标TreeView
+ </summary>
+ <param name="T">要添加到的Treeview</param>
+ <param name="节点路径">完整的树路径</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.添加路径节点到TreeView(System.Windows.Forms.TreeView,System.String[])">
+ <summary>
+ 将路径数组批量添加到目标TreeView
+ </summary>
+ <param name="T">要添加到的Treeview</param>
+ <param name="节点路径数组">完整的树路径数组</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.添加路径节点到TreeView(System.Windows.Forms.TreeView,System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+ <summary>
+ 将路径数组批量添加到目标TreeView
+ </summary>
+ <param name="T">要添加到的Treeview</param>
+ <param name="节点路径数组">完整的树路径数组</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.通过路径查找节点(System.Windows.Forms.TreeView,System.String)">
+ <summary>
+ 从指定TreeView查找指定树路径的唯一节点
+ </summary>
+ <param name="Tv">要在其中查找的TreeView</param>
+ <param name="路径">完整的树路径</param>
+ <returns>返回一个节点</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.清除指定路径节点的子节点(System.Windows.Forms.TreeView,System.String)">
+ <summary>
+ 从指定TreeView中清空指定树路径中最后一个节点
+ </summary>
+ <param name="Tv">要在其中清空树路径中最后一个节点的TreeView</param>
+ <param name="路径">完整的树路径</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.将节点绑定到文件系统(System.Windows.Forms.TreeView,System.String,System.Boolean)">
+ <summary>
+ 以逐层添加模式将指定TreeView控件绑定到驱动器以显示驱动器文件目录
+ </summary>
+ <param name="T">目标TreeView</param>
+ <param name="文件夹路径">要显示的文件夹路径</param>
+ <param name="点击节点时加载子文件列表">是否添加点击事件以支持用户操作</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.控件.TreeView控件.解除节点与文件系统的绑定关系(System.Windows.Forms.TreeView)">
+ <summary>
+ 从目标TreeView解除驱动器绑定并清除内容
+ </summary>
+ <param name="T">目标TreeView</param>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听.允许外网连接">
+ <summary>
+ 是否允许外网访问本服务
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听.绑定端口">
+ <summary>
+ 本服务欲绑定的监听端口号
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听.使用参数前导符">
+ <summary>
+ 是否使用参数前导符，当此属性设置为True时，客户端访问时若没有以指定参数前导符开头的请求将被丢弃。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听.参数前导符">
+ <summary>
+ 设置或获取参数前导符
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听.编码">
+ <summary>
+ 确定解析用户URL以及返回给用户的数据使用何种字符编码
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听_指令版.允许外网连接">
+ <summary>
+ 是否允许外网访问本服务
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听_指令版.绑定端口">
+ <summary>
+ 本服务欲绑定的监听端口号
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听_指令版.使用参数前导符">
+ <summary>
+ 是否使用参数前导符，当此属性设置为True时，客户端访问时若没有以指定参数前导符开头的请求将被丢弃。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听_指令版.参数前导符">
+ <summary>
+ 设置或获取参数前导符
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSAPI.网络.HTTP监听_指令版.监听状态">
+ <summary>
+ 确定解析用户URL以及返回给用户的数据使用何种字符编码
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.获取域名指向的IP(System.String)">
+ <summary>
+ 获取域名指向的IP,如通过动态域名获取IP
+ </summary>
+ <param name="不包括http的域名">要解析成IP的域名,不包括http://开头</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.网络.局域网广播._Port">
+ <summary>
+ 局域网广播器_客户端
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网广播.开始接收广播">
+ <summary>
+ 开始接收广播消息
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网广播.开始接收广播(System.Int32)">
+ <summary>
+ 开始接收广播消息
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网广播.停止接收广播">
+ <summary>
+ 停止接收
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:DSAPI.网络.局域网组播.局域网组播_客户端">
+ <summary>
+ 局域网广播器_客户端
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网组播.局域网组播_客户端.开始接收组播(System.String,System.Int32)">
+ <summary>
+ 开始接收广播消息
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网组播.局域网组播_客户端.开始接收组播">
+ <summary>
+ 开始接收组播消息
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网组播.局域网组播_客户端.开始接收组播(System.Int32)">
+ <summary>
+ 开始接收广播消息
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DSAPI.网络.局域网组播.局域网组播_客户端.停止接收组播">
+ <summary>
+ 停止接收
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:DSAPI.网络.局域网组播.局域网组播_服务端">
+ <summary>
+ 局域网广播器_服务端
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:DSAPI.键盘鼠标钩子">
+ <summary>
+全局钩子
+ </summary>
+</member>
+<member name="M:DSAPI.键盘鼠标钩子.#ctor">
+ <summary>
+ 默认构造器 - 自动开始钩子
+ </summary>
+</member>
+<member name="T:DSAPI.键盘鼠标钩子.HookProc">
+ <summary>
+ Hook Function
+ </summary>
+ <param name="nCode">HC_ACTION或HC_NOREMOVE</param>
+ <param name="wParam">表按键Virtual Key</param>
+ <param name="lParam">与WM_键按下同</param>
+ <returns>若讯息要被处理传0反之传1</returns>
+</member>
+<member name="M:DSAPI.键盘鼠标钩子.SetWindowsHookEx(DSAPI.键盘鼠标钩子.HookType,DSAPI.键盘鼠标钩子.HookProc,System.Int32,System.Int32)">
+ <summary>
+ 本函数是用于启动Hook设置。
+ </summary>
+ <param name="idHook">Hook的类型，即处理的消息类型。</param>
+ <param name="Lpfn">Hook子程（函数或过程）的地址指针。如果dwThreadId参数为0或是一个由别的进程创建的线程的标识，lpfn必须指向DLL中的Hook子程。 除此以外，lpfn可以指向当前进程的一段Hook子程代码</param>
+ <param name="hMod">是应用程序实例的句柄，标识包含lpfn所指的子程的DLL。如果dwThreadId 标识当前进程创建的一个线程，而且子程代码位于当前进程，hMod必须为NULL。</param>
+ <param name="dwThreadId">与安装Hook子程相关联的线程的标识符，如果为0，Hook子程与所有的线程关联。 </param>
+ <returns>函数成功则返回Hook子程的句柄，失败返回NULL。</returns>
+</member>
+<member name="M:DSAPI.键盘鼠标钩子.UnhookWindowsHookEx(System.Int32)">
+ <summary>
+ 本函数是解除Hook之用。
+ </summary>
+ <param name="hHook">Hook函数的句柄。</param>
+ <returns>函数成功则返回TRUE，失败返回FALSE。</returns>
+</member>
+<member name="M:DSAPI.键盘鼠标钩子.CallNextHookEx(System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 本函数的作用是将当前Hook链中的Hook信息传递给下一个Hook。
+ </summary>
+ <param name="hHook">当前Hook的句柄，一个应用程序接收这个句柄，作为先前调用SetWindowsHookEx函数的结果。</param>
+ <param name="nCode">传递到当前Hook过程的Hook代码，下一个Hook过程使用这段代码去决定如何处理Hook信息。</param>
+ <param name="wParam">传递给当前Hook过程的wParam值，它的具体含义是由当前Hook链中的相关Hook的类型决定的。</param>
+ <param name="lParam">传递给当前Hook过程的lParam值，它的具体含义是由当前Hook链中的相关Hook的类型决定的。</param>
+</member>
+<member name="M:DSAPI.文件.系统右键菜单.#ctor">
+ <summary>Default constructor</summary>
+</member>
+<member name="M:DSAPI.文件.系统右键菜单.Finalize">
+ <summary>Ensure all resources get released</summary>
+</member>
+<member name="M:DSAPI.文件.系统右键菜单.GetContextMenuInterfaces(DSAPI.文件.系统右键菜单.IShellFolder,System.IntPtr[],System.IntPtr@)">
+ <summary>Gets the interfaces to the context menu</summary>
+ <param name="oParentFolder">Parent folder</param>
+ <param name="arrPIDLs">PIDLs</param>
+ <returns>true if it got the interfaces, otherwise false</returns>
+</member>
+<member name="M:DSAPI.文件.ShellContextMenuException.#ctor">
+ <summary>Default contructor</summary>
+</member>
+<member name="M:DSAPI.文件.ShellContextMenuException.#ctor(System.String)">
+ <summary>Constructor with message</summary>
+ <param name="message">Message</param>
+</member>
+<member name="T:DSAPI.文件.FolderNameEditor">
+ <summary>
+ FolderBrowser 的设计器基类
+ </summary>
+</member>
+<member name="T:DSAPI.文件.文件夹选择对话框">
+ <summary>
+ Vista 样式的选择文件对话框的基类
+ </summary>
+</member>
+<member name="M:DSAPI.文件.文件夹选择对话框.#ctor">
+ <summary>
+ 初始化 FolderBrowser 的新实例
+ </summary>
+</member>
+<member name="P:DSAPI.文件.文件夹选择对话框.选定路径">
+ <summary>
+ 获取在 FolderBrowser 中选择的文件夹路径
+ </summary>
+</member>
+<member name="M:DSAPI.文件.文件夹选择对话框.打开对话框(System.Windows.Forms.IWin32Window)">
+ <summary>
+ 向用户显示 FolderBrowser 的对话框
+ </summary>
+ <param name="宿主">任何实现 System.Windows.Forms.IWin32Window（表示将拥有模式对话框的顶级窗口）的对象。</param>
+ <returns></returns>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_Processor">
+ <summary>
+  CPU 处理器 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_Processor_LoadPercentage">
+ <summary>
+ CPU使用率
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_PhysicalMemory">
+ <summary>
+ 物理内存条
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_Keyboard">
+ <summary>
+ 键盘
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_PointingDevice">
+ <summary>
+ 输入设备
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_FloppyDrive">
+ <summary>
+ 软盘驱动器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_DiskDrive">
+ <summary>
+ 硬盘驱动器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.DiskDrive_SerialNumber">
+ <summary>
+ 硬盘序列号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_CDROMDrive">
+ <summary>
+ 光盘驱动器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_BaseBoard">
+ <summary>
+ 主板
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_BIOS">
+ <summary>
+ BIOS芯片
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_SoundDevice">
+ <summary>
+ 多媒体设备,声卡
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_USBController">
+ <summary>
+ USB控制器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_NetworkAdapter">
+ <summary>
+ 网络适配器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.NetworAdapterMAC">
+ <summary>
+ 网卡MAC地址
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_Printer">
+ <summary>
+ 打印机
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_PrintJob">
+ <summary>
+ 打印机任务
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_POTSModem">
+ <summary>
+ MODEM调制解调器
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:DSAPI.硬件信息.WMIName.Win32_VideoController">
+ <summary>
+ 显卡
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:DSAPI.Hdd.AtapiDevice">
+ 
+ ATAPI驱动器相关
+ 
+</member>
+</members>
+</doc>

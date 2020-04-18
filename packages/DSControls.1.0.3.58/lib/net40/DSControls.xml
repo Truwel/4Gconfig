@@ -1,0 +1,389 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DSControls
+</name>
+</assembly>
+<members>
+<member name="T:DSControls.My.Resources.Resources">
+<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.ResourceManager">
+<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Culture">
+<summary>
+  重写当前线程的 CurrentUICulture 属性
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources._00421_16x32x8BPP_">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources._00423">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources._00424_16x32x8BPP_">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources._Error">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.accept">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.arrow">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.colorbmp">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.DS搜索框">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.heart">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Lodings">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.ONOFFLayer">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.P1">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.P2">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Pin">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.R0">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.R1">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.R2">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.R3">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.R4">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Rd1">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Rd2">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Shadow">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Shadow1">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.TabClose1">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.TabClose2">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.TabClose3">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.time1">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.time2">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.Tip">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.TipShadow">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.win7bararrow">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.关闭">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.分针">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.头像遮罩">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.时针">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.秒针">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="P:DSControls.My.Resources.Resources.赞">
+<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member>
+<member name="M:DSControls.控件.TreeView控件.添加路径节点到TreeView(System.Windows.Forms.TreeView,System.String)">
+ <summary>
+ 将路径添加到目标TreeView
+ </summary>
+ <param name="T">要添加到的Treeview</param>
+ <param name="节点路径">完整的树路径</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.控件.TreeView控件.添加路径节点到TreeView(System.Windows.Forms.TreeView,System.String[])">
+ <summary>
+ 将路径数组批量添加到目标TreeView
+ </summary>
+ <param name="T">要添加到的Treeview</param>
+ <param name="节点路径数组">完整的树路径数组</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.控件.TreeView控件.添加路径节点到TreeView(System.Windows.Forms.TreeView,System.Collections.ObjectModel.ReadOnlyCollection{System.String})">
+ <summary>
+ 将路径数组批量添加到目标TreeView
+ </summary>
+ <param name="T">要添加到的Treeview</param>
+ <param name="节点路径数组">完整的树路径数组</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.控件.TreeView控件.通过路径查找节点(System.Windows.Forms.TreeView,System.String)">
+ <summary>
+ 从指定TreeView查找指定树路径的唯一节点
+ </summary>
+ <param name="Tv">要在其中查找的TreeView</param>
+ <param name="路径">完整的树路径</param>
+ <returns>返回一个节点</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.控件.TreeView控件.清除指定路径节点的子节点(System.Windows.Forms.TreeView,System.String)">
+ <summary>
+ 从指定TreeView中清空指定树路径中最后一个节点
+ </summary>
+ <param name="Tv">要在其中清空树路径中最后一个节点的TreeView</param>
+ <param name="路径">完整的树路径</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.控件.TreeView控件.将节点绑定到文件系统(System.Windows.Forms.TreeView,System.String,System.Boolean)">
+ <summary>
+ 以逐层添加模式将指定TreeView控件绑定到驱动器以显示驱动器文件目录
+ </summary>
+ <param name="T">目标TreeView</param>
+ <param name="文件夹路径">要显示的文件夹路径</param>
+ <param name="点击节点时加载子文件列表">是否添加点击事件以支持用户操作</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.控件.TreeView控件.解除节点与文件系统的绑定关系(System.Windows.Forms.TreeView)">
+ <summary>
+ 从目标TreeView解除驱动器绑定并清除内容
+ </summary>
+ <param name="T">目标TreeView</param>
+ <remarks></remarks>
+</member>
+<member name="M:DSControls.DS富文本.InsertLink(System.String)">
+ <summary>
+ Insert a given text as a link into the RichTextBox at the current insert position.
+ </summary>
+ <param name="text">Text to be inserted</param>
+</member>
+<member name="M:DSControls.DS富文本.InsertLink(System.String,System.Int32)">
+ <summary>
+ Insert a given text at a given position as a link. 
+ </summary>
+ <param name="text">Text to be inserted</param>
+ <param name="position">Insert position</param>
+</member>
+<member name="M:DSControls.DS富文本.InsertLink(System.String,System.String)">
+ <summary>
+ Insert a given text at at the current input position as a link.
+ The link text is followed by a hash (#) and the given hyperlink text, both of
+ them invisible.
+ When clicked on, the whole link text and hyperlink string are given in the
+ LinkClickedEventArgs.
+ </summary>
+ <param name="text">Text to be inserted</param>
+ <param name="hyperlink">Invisible hyperlink string to be inserted</param>
+</member>
+<member name="M:DSControls.DS富文本.InsertLink(System.String,System.String,System.Int32)">
+ <summary>
+ Insert a given text at a given position as a link. The link text is followed by
+ a hash (#) and the given hyperlink text, both of them invisible.
+ When clicked on, the whole link text and hyperlink string are given in the
+ LinkClickedEventArgs.
+ </summary>
+ <param name="text">Text to be inserted</param>
+ <param name="hyperlink">Invisible hyperlink string to be inserted</param>
+ <param name="position">Insert position</param>
+</member>
+<member name="M:DSControls.DS富文本.SetSelectionLink(System.Boolean)">
+ <summary>
+ Set the current selection's link style
+ </summary>
+ <param name="link">true: set link style, false: clear link style</param>
+</member>
+<member name="M:DSControls.DS富文本.GetSelectionLink">
+ <summary>
+ Get the link style for the current selection
+ </summary>
+ <returns>0: link style not set, 1: link style set, -1: mixed</returns>
+</member>
+<member name="T:DSControls.图形图像.彩色文字图像.数值调整">
+ <summary>
+ 格式：ChValue=显示文本,目标控件名称,绑定的属性名称,最小值,最大值,当前值
+ </summary>
+</member>
+<member name="P:DSControls.图形图像.彩色文字图像.输出图像">
+ <summary>
+ 最终输出图像
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSControls.图形图像.彩色文字图像.字体">
+ <summary>
+ 字体
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DSControls.图形图像.彩色文字图像.描边颜色">
+ <summary>
+ 文字描边颜色
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:DSControls.键盘鼠标钩子">
+ <summary>
+全局钩子
+ </summary>
+</member>
+<member name="M:DSControls.键盘鼠标钩子.#ctor">
+ <summary>
+ 默认构造器 - 自动开始钩子
+ </summary>
+</member>
+<member name="T:DSControls.键盘鼠标钩子.HookProc">
+ <summary>
+ Hook Function
+ </summary>
+ <param name="nCode">HC_ACTION或HC_NOREMOVE</param>
+ <param name="wParam">表按键Virtual Key</param>
+ <param name="lParam">与WM_键按下同</param>
+ <returns>若讯息要被处理传0反之传1</returns>
+</member>
+<member name="M:DSControls.键盘鼠标钩子.SetWindowsHookEx(DSControls.键盘鼠标钩子.HookType,DSControls.键盘鼠标钩子.HookProc,System.Int32,System.Int32)">
+ <summary>
+ 本函数是用于启动Hook设置。
+ </summary>
+ <param name="idHook">Hook的类型，即处理的消息类型。</param>
+ <param name="Lpfn">Hook子程（函数或过程）的地址指针。如果dwThreadId参数为0或是一个由别的进程创建的线程的标识，lpfn必须指向DLL中的Hook子程。 除此以外，lpfn可以指向当前进程的一段Hook子程代码</param>
+ <param name="hMod">是应用程序实例的句柄，标识包含lpfn所指的子程的DLL。如果dwThreadId 标识当前进程创建的一个线程，而且子程代码位于当前进程，hMod必须为NULL。</param>
+ <param name="dwThreadId">与安装Hook子程相关联的线程的标识符，如果为0，Hook子程与所有的线程关联。 </param>
+ <returns>函数成功则返回Hook子程的句柄，失败返回NULL。</returns>
+</member>
+<member name="M:DSControls.键盘鼠标钩子.UnhookWindowsHookEx(System.Int32)">
+ <summary>
+ 本函数是解除Hook之用。
+ </summary>
+ <param name="hHook">Hook函数的句柄。</param>
+ <returns>函数成功则返回TRUE，失败返回FALSE。</returns>
+</member>
+<member name="M:DSControls.键盘鼠标钩子.CallNextHookEx(System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 本函数的作用是将当前Hook链中的Hook信息传递给下一个Hook。
+ </summary>
+ <param name="hHook">当前Hook的句柄，一个应用程序接收这个句柄，作为先前调用SetWindowsHookEx函数的结果。</param>
+ <param name="nCode">传递到当前Hook过程的Hook代码，下一个Hook过程使用这段代码去决定如何处理Hook信息。</param>
+ <param name="wParam">传递给当前Hook过程的wParam值，它的具体含义是由当前Hook链中的相关Hook的类型决定的。</param>
+ <param name="lParam">传递给当前Hook过程的lParam值，它的具体含义是由当前Hook链中的相关Hook的类型决定的。</param>
+</member>
+</members>
+</doc>
